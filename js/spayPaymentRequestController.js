@@ -62,7 +62,7 @@
 		// 		_sendMessage(data);
 		// 	});
 		// }
-		_sendMessage({data:'from inner Iframe'});
+		_sendMessage({ isLinked: false });
 
 	}
 
