@@ -8,30 +8,30 @@
 
 
 	//Create PaymentRequest Object
-	var paymentRequest = {
-		checkoutPartner: "VisaCheckout",
-		requestPayload: {
-			data: {
-				// checkoutPaymentInfo: checkoutPaymentInfo,
-				// visaIntentData: visaData,
-				// paymentInitParams: visaConfigs
-			}
-		}
-	};
-	var metaProd = "https://ecomm.mpay.samsung.com/ew/v1/vco/w3c";
-	var metaStg = "https://ecomm.stg.mpay.samsung.com/ew/v1/vco/w3c";
-	var metaJsonUrl =  false ? metaProd : metaStg;
-	var methodData = [{
-		supportedMethods: [metaJsonUrl],
-		data: paymentRequest
-	}];
-	var details = {
-		total: {
-			label: "Total due",
-			amount: { currency: "USD", value: "00.00" }
-		}
-	};
-	paymentReqWallet = new PaymentRequest(methodData, details, {});
+	// var paymentRequest = {
+	// 	checkoutPartner: "VisaCheckout",
+	// 	requestPayload: {
+	// 		data: {
+	// 			// checkoutPaymentInfo: checkoutPaymentInfo,
+	// 			// visaIntentData: visaData,
+	// 			// paymentInitParams: visaConfigs
+	// 		}
+	// 	}
+	// };
+	// var metaProd = "https://ecomm.mpay.samsung.com/ew/v1/vco/w3c";
+	// var metaStg = "https://ecomm.stg.mpay.samsung.com/ew/v1/vco/w3c";
+	// var metaJsonUrl =  false ? metaProd : metaStg;
+	// var methodData = [{
+	// 	supportedMethods: [metaJsonUrl],
+	// 	data: paymentRequest
+	// }];
+	// var details = {
+	// 	total: {
+	// 		label: "Total due",
+	// 		amount: { currency: "USD", value: "00.00" }
+	// 	}
+	// };
+	// paymentReqWallet = new PaymentRequest(methodData, details, {});
 
 
 
