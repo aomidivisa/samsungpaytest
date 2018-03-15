@@ -62,7 +62,8 @@
 		// 		_sendMessage(data);
 		// 	});
 		// }
-		_sendMessage({ isLinked: false });
+		data.result = { isLinked: false };
+		_sendMessage(data);
 
 	}
 
