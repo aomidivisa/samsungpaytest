@@ -1,9 +1,9 @@
 (function(){
-	var sAdapter = window.vAdapters.samsungPay.VisaPaymentAdapter;
-	var sAdapterObj = null;
+	//var sAdapter = window.vAdapters.samsungPay.VisaPaymentAdapter;
+	//var sAdapterObj = null;
 
 	var _constructor = function(data){
-		sAdapterObj = 'paymentInitParams' in data ? new sAdapter(data.paymentInitParams) : null;
+	//	sAdapterObj = 'paymentInitParams' in data ? new sAdapter(data.paymentInitParams) : null;
 	}
 
 
@@ -51,17 +51,18 @@
     // });
 
 
-		if(sAdapterObj){
-			sAdapterObj.getWalletInfo()
-			.then(function(res) {
-				data.result = res;
-				_sendMessage(data);
-			})
-			.catch(function(err) {
-				data.result = err;
-				_sendMessage(data);
-			});
-		}
+		// if(sAdapterObj){
+		// 	sAdapterObj.getWalletInfo()
+		// 	.then(function(res) {
+		// 		data.result = res;
+		// 		_sendMessage(data);
+		// 	})
+		// 	.catch(function(err) {
+		// 		data.result = err;
+		// 		_sendMessage(data);
+		// 	});
+		// }
+		_sendMessage({data:'from inner Iframe'});
 
 	}
 
